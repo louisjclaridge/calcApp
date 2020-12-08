@@ -20,7 +20,7 @@ suite("Integration tests for coin flip system", function() {
 
     chai.request(app).get("/add/2/2").end(function(error, response) {
       chai.assert.equal(response.status, 200, "Wrong status code");
-      chai.assert.include("4", response.text, "Wrong response text");
+      chai.assert.equal("4", response.text, "Wrong response text");
     });
   });
 
