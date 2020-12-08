@@ -23,7 +23,7 @@ suite("Test coin flip", function() {
   });
   test("Test the numbers are added correctly", function() {
     result = logic.addNumbers(2, 2);
-    chai.equal(4, result);
+    chai.assert.equal(4, result);
   });
 
 });
