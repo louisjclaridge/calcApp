@@ -21,5 +21,9 @@ suite("Test coin flip", function() {
 
     chai.assert.approximately(50, counter, 10);
   });
+  test("Test the numbers are added correctly", function() {
+    result = logic.addNumbers(2, 2);
+    chai.assert.equals(4, result);
+  });
 
 });
